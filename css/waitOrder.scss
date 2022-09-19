@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+// Main start styling
+main {
+  max-width: 1360px;
+  margin: 50px auto;
+  padding: 0 36px;
+
+  #home {
+    display: flex;
+    flex-wrap: wrap;
+
+    .home-text {
+      p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        color: #000000;
+        padding: 45px 15px;
+
+        span {
+          background: #f7f7f7 !important;
+          border-radius: 10px;
+          width: 46px !important;
+          height: 56px !important;
+          padding: 0 7px;
+        }
+      }
+
+      .second-text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 26px !important;
+        color: #000000;
+        padding: 0;
+        padding-left: 15px !important;
+      }
+
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        color: #000000;
+        padding-right: 100px;
+        padding: 20px 0;
+        padding-left: 15px !important;
+      }
+
+      .home-clock {
+        display: none;
+      }
+    }
+  }
+}
+
+// Main end styling
+
+@media (max-width: 1245px) {
+
+  // home
+  main {
+    padding: 0 12px;
+
+    #home {
+      .home-text {
+        p {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 26px;
+          color: #000000;
+          padding: 0;
+          padding-left: 18px;
+
+          span {
+            background: #f7f7f7 !important;
+            border-radius: 10px;
+            width: 46px !important;
+            height: 56px !important;
+          }
+        }
+
+        .second-text {
+          font-family: "Roboto", sans-serif;
+          font-style: normal !important;
+          font-weight: 400 !important;
+          font-size: 26px !important;
+          color: #000000;
+          padding: 0;
+        }
+
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          color: #000000;
+          padding-right: 100px;
+          padding: 20px 0;
+        }
+
+        .home-clock {
+          display: block;
+        }
+      }
+
+      .home-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  //Home
+  main {
+    padding: 0;
+    margin: 12px auto;
+
+    #home {
+      .home-text {
+        p {
+          font-size: 14px !important;
+
+          span {
+            background: #f7f7f7 !important;
+            border-radius: 10px;
+            width: 46px !important;
+            height: 56px !important;
+          }
+        }
+
+        .second-text {
+          font-size: 14px !important;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+
+        .home-clock {
+          display: block;
+          width: 271px !important;
+          height: 271px !important;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .home-img {
+        display: none;
+      }
+    }
+  }
+
+}
+
+@import "_headerFooter.scss"

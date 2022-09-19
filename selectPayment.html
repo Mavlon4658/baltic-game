@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baltic Game</title>
+  <!-- Bootstrap 5.0.0 file -->
+  <link rel="stylesheet" href="./libs/bootstrap-5.0.0.css" />
+  <!-- Normalize css file -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- gilroy font -->
+  <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css" />
+  <!-- style link -->
+  <link rel="stylesheet" href="./css/selectPayment.css" />
+</head>
+
+<body>
+
+  <!-- Header start -->
+  <header>
+    <nav class="header-container d-flex justify-content-between align-items-center h-100">
+      <div class="header-logo">
+        <a href="./index.html">
+          <img src="./images/header_logo.jpg" alt="logo">
+        </a>
+      </div>
+      <div class="nav-link d-flex align-items-center pt-0">
+        <div class="exit-menu d-none">&times;</div>
+        <ul class="d-flex mb-0 align-items-center">
+          <li class="products position-relative">
+            <ul class="drop-down-item-header mb-0 p-0 d-none">
+              <!-- category start -->
+              <section class="category-header">
+                <div class="category_wrapper-header">
+                  <div class="category_in-header">
+                    <div class="category_link-header row">
+                      <div class="col-12 py-2 pt-3 category_link-header-in category_link-header-playstation px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img" width="44" height="34" viewBox="0 0 44 34" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M43.3159 25.9057C42.4665 26.9774 40.3855 27.7418 40.3855 27.7418L24.9049 33.3024V29.2016L36.2976 25.1423C37.5904 24.6791 37.7889 24.0243 36.7381 23.6805C35.6892 23.3358 33.7899 23.4346 32.4961 23.8998L24.9049 26.5734V22.3176L25.3424 22.1694C25.3424 22.1694 27.536 21.3931 30.6205 21.0514C33.705 20.7116 37.4818 21.0978 40.4467 22.2218C43.788 23.2776 44.1643 24.8341 43.3159 25.9057ZM26.3785 18.923V8.43597C26.3785 7.20436 26.1513 6.07052 24.9957 5.74953C24.1108 5.46607 23.5617 6.2878 23.5617 7.51843V33.7804L16.4791 31.5325V0.219604C19.4905 0.778622 23.8777 2.10011 26.2362 2.89518C32.2343 4.95446 34.2679 7.51745 34.2679 13.2923C34.2679 18.921 30.7933 21.0543 26.3785 18.923ZM3.48347 28.7729C0.0533135 27.807 -0.517556 25.7941 1.04591 24.6346C2.49086 23.564 4.94817 22.7581 4.94817 22.7581L15.1033 19.1472V23.2638L7.7956 25.8791C6.50472 26.3423 6.3062 26.9981 7.3551 27.3418C8.40499 27.6855 10.3053 27.5877 11.5981 27.1235L15.1033 25.8514V29.5344C14.8811 29.5739 14.6332 29.6134 14.404 29.652C10.8978 30.2248 7.1635 29.9858 3.48347 28.7729ZM41.0601 30.4036C41.5035 30.4036 41.9193 30.5754 42.2324 30.8925C42.5455 31.2046 42.7184 31.6214 42.7184 32.0638C42.7184 32.5083 42.5455 32.9231 42.2324 33.2352C41.9193 33.5503 41.5035 33.7221 41.0601 33.7221C40.6166 33.7221 40.2018 33.5503 39.8877 33.2352C39.5746 32.9231 39.4028 32.5083 39.4028 32.0638C39.4028 31.1493 40.1455 30.4036 41.0601 30.4036ZM39.6813 32.0638C39.6813 32.4322 39.8245 32.7789 40.0853 33.0377C40.345 33.3004 40.6927 33.4426 41.0601 33.4426C41.8216 33.4426 42.4389 32.8243 42.4389 32.0638C42.4389 31.6944 42.2966 31.3478 42.0349 31.088C41.7751 30.8253 41.4275 30.6841 41.0601 30.6841C40.6927 30.6841 40.345 30.8253 40.0853 31.088C39.8245 31.3478 39.6813 31.6944 39.6813 32.0638ZM41.5608 31.17C41.7425 31.25 41.8344 31.4041 41.8344 31.6233C41.8344 31.7359 41.8107 31.8307 41.7623 31.9048C41.7277 31.9581 41.6783 32.0016 41.623 32.0391C41.6665 32.0648 41.705 32.0954 41.7337 32.131C41.7732 32.1823 41.7959 32.2643 41.7988 32.3759L41.8077 32.612C41.8107 32.6752 41.8147 32.7236 41.8245 32.7532C41.8344 32.7967 41.8532 32.8243 41.8769 32.8332L41.9016 32.8451V32.8717V32.9122V32.9527H41.8611H41.5677H41.544L41.5322 32.932C41.5223 32.9123 41.5154 32.8895 41.5085 32.8599C41.5035 32.8332 41.4986 32.7868 41.4956 32.7157L41.4808 32.4224C41.4769 32.3206 41.4423 32.2574 41.3771 32.2238C41.3366 32.2051 41.2695 32.1962 41.1786 32.1962H40.6759V32.9122V32.9527H40.6344H40.3954H40.3549V32.9122V31.1473V31.1068H40.3954H41.2122C41.3524 31.1068 41.4699 31.1275 41.5608 31.17L41.5608 31.17ZM40.6759 31.9137H41.1875C41.2902 31.9137 41.3722 31.8949 41.4304 31.8564C41.4838 31.8179 41.5095 31.7478 41.5095 31.646C41.5095 31.5354 41.4729 31.4633 41.3959 31.4248C41.3534 31.4041 41.2941 31.3922 41.2191 31.3922H40.6759V31.9137Z"
+                              fill="#2F424E" />
+                          </svg>
+
+                          <span>PlayStation Store<svg class="down_img" width="9" height="5" viewBox="0 0 9 5"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg></span></a>
+                      </div>
+                      <div class="col-12 py-2 category_link-header-in category_link-header-xbox px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img category_left" width="34" height="34" viewBox="0 0 34 34"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M15.3502 33.5789C12.7894 33.3335 10.1969 32.414 7.9699 30.9609C6.10376 29.7438 5.68263 29.2427 5.68263 28.2439C5.68263 26.2376 7.88876 22.7228 11.6635 18.717C13.8067 16.4413 16.7925 13.7754 17.1151 13.8473C17.7434 13.9875 22.7622 18.8831 24.6415 21.1882C27.6126 24.8316 28.978 27.8159 28.2841 29.1461C27.7567 30.1572 24.4835 32.1339 22.0791 32.8931C20.0971 33.519 17.4941 33.784 15.3502 33.5789ZM3.16199 26.158C1.61113 23.7787 0.827583 21.4366 0.449719 18.049C0.324537 16.9304 0.368583 16.291 0.732924 13.9945C1.18613 11.1354 2.81542 7.82423 4.77429 5.7881C5.60806 4.92264 5.68224 4.89946 6.69915 5.24333C7.93165 5.6606 9.24915 6.57087 11.293 8.41924L12.4869 9.49873L11.8339 10.2985C8.80947 14.0115 5.61733 19.2776 4.41574 22.5346C3.76279 24.3042 3.50006 26.0815 3.7821 26.8214C3.97142 27.3213 3.79756 27.1351 3.16006 26.1591L3.16199 26.158ZM30.3825 26.5625C30.5359 25.8145 30.3419 24.4414 29.8879 23.0559C28.9046 20.0557 25.6171 14.4747 22.5984 10.6798L21.6479 9.48521L22.6764 8.54133C24.0187 7.30883 24.9506 6.57087 25.9567 5.9438C26.7499 5.44926 27.8839 5.01151 28.3714 5.01151C28.6716 5.01151 29.7299 6.11264 30.5838 7.31037C31.9067 9.16492 32.8795 11.4174 33.3725 13.7588C33.6913 15.2733 33.7179 18.5111 33.4239 20.0217C33.1805 21.2612 32.6705 22.8677 32.176 23.9576C31.8012 24.774 30.8778 26.36 30.4721 26.8762C30.2635 27.1416 30.2635 27.1413 30.3794 26.5687L30.3825 26.5625ZM15.6245 4.4451C14.2313 3.73805 12.0824 2.97885 10.8954 2.77408C10.4797 2.7026 9.76997 2.66203 9.31908 2.68521C8.33926 2.73467 8.38292 2.68367 9.95388 1.94146C11.2598 1.32444 12.3493 0.961643 13.8291 0.651007C15.4924 0.301348 18.62 0.297484 20.257 0.642507C22.0246 1.01535 24.1068 1.79001 25.2798 2.51251L25.629 2.72655L24.8293 2.68637C23.239 2.60601 20.9216 3.24853 18.4334 4.45862C17.6831 4.82412 17.0309 5.11544 16.983 5.10771C16.9355 5.09844 16.3239 4.80055 15.623 4.4451H15.6245Z"
+                              fill="#2F424E" />
+                          </svg>
+                          <span>XBOX<svg class="down_img" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg></span></a>
+                      </div>
+                      <div class="col-12 py-2 category_link-header-in category_link-header-steam px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M16.9414 0C8.01108 0 0.695195 6.88585 0 15.6367L9.11171 19.404C9.88376 18.8759 10.8165 18.5666 11.8199 18.5666C11.9098 18.5666 11.9993 18.5704 12.0881 18.5747L16.1401 12.7014C16.1401 12.6734 16.1401 12.6461 16.1401 12.6184C16.1401 9.08327 19.0158 6.20718 22.5514 6.20718C26.0865 6.20718 28.9622 9.08327 28.9622 12.6184C28.9622 16.1536 26.0865 19.0301 22.5514 19.0301C22.5026 19.0301 22.4541 19.0301 22.4057 19.0262L16.6267 23.1497C16.6305 23.2247 16.6324 23.3011 16.6324 23.3772C16.6324 26.0312 14.4738 28.1894 11.8202 28.1894C9.49101 28.1894 7.54339 26.5269 7.10221 24.3253L0.58567 21.6329C2.60323 28.7686 9.15897 34 16.9414 34C26.3306 34 33.9416 26.3886 33.9416 17.0006C33.9416 7.61102 26.3302 0 16.9414 0Z"
+                              fill="#2F424E" />
+                          </svg>
+                          <span>Steam<svg class="down_img" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg></span></a>
+                      </div>
+                      <div class="col-12 py-2 category_link-header-in category_link-header-nintendo px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img" width="44" height="34" viewBox="0 0 44 34" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M18.0511 34C7.23033 33.9963 0 26.328 0 17.0303C0 7.73257 7.24682 -0.0237712 18.0346 5.47486e-05L25.6333 5.47582e-05C36.4211 -0.0237739 43.6679 7.73257 43.6679 17.0303C43.6679 26.328 36.4376 33.9963 25.6168 34H18.0511ZM18.0841 4.18247C9.51764 4.19896 4.25939 9.92457 4.25939 17.0083C4.25939 24.0901 9.48465 29.8634 18.0841 29.8323H25.5838C34.1833 29.8616 39.4104 24.0901 39.4104 17.0083C39.4104 9.92641 34.1521 4.20079 25.5857 4.18429L18.0841 4.18247ZM13.6891 24.9754L13.6909 8.9697H18.6779L25.5765 20.1313L25.5728 8.9697H30.5213V24.9754H25.5801L18.6449 13.8137V24.9754H13.6891Z"
+                              fill="#2F424E" />
+                          </svg>
+                          <span>Nintendo<svg class="down_img" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg></span></a>
+                      </div>
+                      <div class="col-12 py-2 category_link-header-in category_link-header-itunes px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img category_svg" width="34" height="34" viewBox="0 0 34 34"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_103_95)">
+                              <path
+                                d="M4.46986 7.99268L4.46987 7.99266C9.41883 1.08182 19.0072 -0.487856 25.8871 4.48323L26.4727 3.67268L25.8871 4.48324C32.7694 9.456 34.338 19.0932 29.3871 26.0072C24.4378 32.9181 14.8497 34.4877 7.96953 29.5166C1.08716 24.5436 -0.481339 14.9064 4.46986 7.99268Z"
+                                stroke="#2F424E" stroke-width="2" stroke-miterlimit="10" />
+                              <path
+                                d="M21.5231 23.1832C22.4423 22.9261 23.0913 22.3025 23.3569 21.4216L23.4352 21.1627L23.4455 14.2181C23.4531 9.01743 23.4458 7.24117 23.4155 7.14422C23.3836 7.04144 23.3331 6.95524 23.267 6.88711C23.1697 6.82993 23.0527 6.79979 22.9201 6.79999C22.8288 6.79999 22.5115 6.84198 22.2155 6.89333C20.9059 7.12077 13.1867 8.58718 13.0549 8.63369C12.8509 8.70562 12.6489 8.87652 12.553 9.05791L12.4717 9.21159C12.4717 9.21159 12.4334 20.0968 12.3742 20.2192C12.2843 20.4057 12.0847 20.5824 11.9006 20.6387C11.8134 20.6655 11.4687 20.7392 11.1341 20.8026C9.58536 21.0966 9.01019 21.3084 8.52362 21.7641C8.24727 22.0228 8.04261 22.376 7.95416 22.7465C7.86955 23.1008 7.89784 23.6309 8.01837 23.9532C8.14467 24.2903 8.34795 24.5782 8.61372 24.8047C8.85533 24.9823 9.14054 25.1145 9.46119 25.193C10.1701 25.3661 11.4974 25.1735 12.176 24.7992C12.4597 24.6425 12.8247 24.3142 13.0146 24.0441C13.0898 23.9372 13.2027 23.722 13.266 23.5657C13.487 23.0182 13.4939 13.2668 13.5222 13.144C13.5701 12.9355 13.7195 12.783 13.9253 12.7311C14.1108 12.6847 21.5435 11.283 21.7528 11.255C21.9368 11.2307 22.1106 11.2872 22.2055 11.3987C22.2618 11.4275 22.3093 11.4664 22.3426 11.5142C22.403 11.5999 22.4067 11.7695 22.4157 14.8568C22.426 18.4103 22.4306 18.327 22.228 18.5513C22.0807 18.7143 21.8969 18.7775 21.1414 18.9245C19.9919 19.1484 19.5986 19.2547 19.1583 19.4595C18.6087 19.7157 18.3035 19.9963 18.0676 20.4623C17.9007 20.792 17.8385 21.0391 17.8389 21.3671C17.8399 21.954 18.0522 22.4123 18.5308 22.8611C18.575 22.9024 18.6183 22.9409 18.6619 22.977C18.9031 23.1549 19.149 23.2621 19.4582 23.3301C19.9245 23.4324 20.8736 23.365 21.5231 23.1832Z"
+                                fill="#2F424E" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_103_95">
+                                <rect width="33.8568" height="34" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+
+                          <span>Itunes <svg class="down_img" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg></span></a>
+                      </div>
+                      <div class="col-12 py-2 category_link-header-in category_link-header-other px-4">
+                        <a class="category_item-header">
+                          <svg class="category_item_img other" width="24" height="24" viewBox="0 0 8 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M4 8C3.20887 8 2.43552 7.76541 1.77772 7.32588C1.11992 6.88635 0.607232 6.26164 0.304481 5.53074C0.00173071 4.79983 -0.0774824 3.99556 0.0768584 3.21964C0.231199 2.44372 0.612163 1.73098 1.17157 1.17157C1.73098 0.612164 2.44371 0.231201 3.21964 0.0768605C3.99556 -0.0774804 4.79983 0.00173298 5.53073 0.304484C6.26164 0.607234 6.88635 1.11992 7.32588 1.77772C7.7654 2.43552 8 3.20888 8 4C8 5.06087 7.57857 6.07828 6.82843 6.82843C6.07828 7.57857 5.06087 8 4 8ZM8 14C8 13.2089 7.7654 12.4355 7.32588 11.7777C6.88635 11.1199 6.26164 10.6072 5.53073 10.3045C4.79983 10.0017 3.99556 9.92252 3.21964 10.0769C2.44371 10.2312 1.73098 10.6122 1.17157 11.1716C0.612163 11.731 0.231199 12.4437 0.0768579 13.2196C-0.0774828 13.9956 0.00173027 14.7998 0.304481 15.5307C0.607231 16.2616 1.11992 16.8864 1.77772 17.3259C2.43552 17.7654 3.20887 18 4 18C5.06087 18 6.07828 17.5786 6.82843 16.8284C7.57857 16.0783 8 15.0609 8 14ZM8 24C8 23.2089 7.7654 22.4355 7.32588 21.7777C6.88635 21.1199 6.26164 20.6072 5.53073 20.3045C4.79983 20.0017 3.99556 19.9225 3.21964 20.0769C2.44371 20.2312 1.73098 20.6122 1.17157 21.1716C0.612163 21.731 0.231198 22.4437 0.0768575 23.2196C-0.0774833 23.9956 0.00172983 24.7998 0.30448 25.5307C0.607231 26.2616 1.11992 26.8864 1.77772 27.3259C2.43552 27.7654 3.20887 28 4 28C5.06086 28 6.07828 27.5786 6.82843 26.8284C7.57857 26.0783 8 25.0609 8 24Z"
+                              fill="#2F424E" />
+                          </svg>
+                          <span>Other<svg class="down_img" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.28257 4.837C5.28757 4.831 5.28957 4.823 5.29457 4.817L8.78557 0.96C8.98057 0.743 8.98057 0.391 8.78557 0.174C8.78357 0.172 8.78157 0.171 8.77957 0.17C8.73619 0.117455 8.68185 0.0750185 8.62036 0.0456553C8.55887 0.016292 8.49171 0.000710694 8.42357 0H1.44057C1.37119 0.00112121 1.30289 0.0174647 1.24051 0.0478764C1.17813 0.078288 1.12319 0.122026 1.07957 0.176L1.07757 0.174C0.983205 0.283186 0.931274 0.422684 0.931274 0.567C0.931274 0.711317 0.983205 0.850814 1.07757 0.96L4.57657 4.837C4.62013 4.88806 4.67425 4.92906 4.7352 4.95718C4.79614 4.9853 4.86246 4.99986 4.92957 4.99986C4.99669 4.99986 5.06301 4.9853 5.12395 4.95718C5.1849 4.92906 5.23901 4.88806 5.28257 4.837Z"
+                                fill="#2F424E" />
+                            </svg>
+                          </span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- category end -->
+
+              <!-- Playstation store start -->
+              <div class="flag-header flag-playstation-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/playstation.png" alt="">
+                      <span>PlayStation Store</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Playstation store end -->
+
+              <!-- Xbox start -->
+              <div class="flag-header flag-xbox-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/xbox.png" alt="">
+                      <span>XBOX</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xbox end -->
+
+              <!-- Steam start -->
+              <div class="flag-header flag-steam-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/steam.png" alt="">
+                      <span>Steam</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Steam end -->
+
+              <!-- Nintendo start -->
+              <div class="flag-header flag-nintendo-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/steam.png" alt="">
+                      <span>Nintendo</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Nintendo end -->
+
+              <!-- Itunes start -->
+              <div class="flag-header flag-itunes-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/steam.png" alt="">
+                      <span>Itunes</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Itunes end -->
+
+              <!-- Steam start -->
+              <div class="flag-header flag-other-header d-none">
+
+                <div class="flag_in-header">
+                  <div class="d-flex w-100 px-4 align-items-center">
+                    <div class="d-flex align-items-center text">
+                      <img src="./images/steam.png" alt="">
+                      <span>Other</span>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/usa.png" alt="usa.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>USA</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/uk.png" alt="uk.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>UK</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/finland.png" alt="finland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Finland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/ukraine.png" alt="ukraine.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Ukraine</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/poland.png" alt="poland.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Poland</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/italy.png" alt="italy.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Italy</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/germany.png" alt="germany.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Germany</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/denmark.png" alt="denmark.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Denmark</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/crech.png" alt="crech.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Czech</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/sweden.png" alt="sweden.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Sweden</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/norway.png" alt="norway.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Norway</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/spain.png" alt="spain.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Spain</h2>
+                    </div>
+                  </div>
+                  <div class="flag_item">
+                    <img src="./images/flags/russia.png" alt="russia.png">
+                    <div class="flag_item_text">
+                      <p>PSN</p>
+                      <h2>Russia</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Steam end -->
+
+            </ul>
+            <div class="drop-down">PRODUCTS <img src="./images/select-img.jpg" alt="">
+            </div>
+          </li>
+          <!-- <li class="sale">SALE</li> -->
+          <li class="sale-img position-relative d-flex align-items-center justify-content-center">SALE</li>
+          <li class="faq">FAQ</li>
+          <li class="support">SUPPORT</li>
+        </ul>
+      </div>
+      <div class="header-buttons d-flex">
+        <button class="search-button border-0"><img class="search" src="./images/search.png" alt="search"></button>
+        <button id="basket" class="buy-button border-0">
+          <span class="text-white">2</span>
+          <img class="buy" src="./images/buy_basket.svg" alt="buy"></button>
+        <button class="lang-button position-relative border-0">
+          <img class="lang" src="./images/flags/usa.png" alt="usa">
+          <div class="lang-menu">
+            <div class="d-flex align-items-center lang-item active" data-src="./images/flags/usa.png"><img
+                src="./images/flags/usa.png" alt=""><span>USA</span></div>
+            <div class="d-flex align-items-center lang-item" data-src="./images/flags/russia.png"><img
+                src="./images/flags/russia.png" alt=""><span>RUS</span></div>
+            <div class="d-flex align-items-center lang-item" data-src="./images/flags/finland.png"><img
+                src="./images/flags/finland.png" alt=""><span>FINLAND</span></div>
+          </div>
+        </button>
+        <button class="burger-menu-button d-none border-0">
+          <img class="d-none exit burger" src="./images/burger_x.svg" alt="" />
+          <img class="burger burger-stick" src="./images/burger-dark.png" alt="burger">
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu position-fixed left-0 w-100 h-100 bottom-0">
+    <div class="main">
+      <div class="m-0 w-100 accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed bg-transparent text-uppercase p-0 border-0 hovered" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+              aria-controls="flush-collapseOne">
+              Products
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse bg-transparent"
+            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item py-2 mobile-meu-category-playstation"> <img src="./images/playstation.png"
+                    alt=""> PlayStation Store</li>
+                <li class="list-group-item py-2 mobile-meu-category-xbox"> <img src="./images/xbox.png" alt=""> XBOX
+                </li>
+                <li class="list-group-item py-2 mobile-meu-category-steam"> <img src="./images/steam.png" alt=""> Steam
+                </li>
+                <li class="list-group-item py-2 mobile-meu-category-nintendo"> <img src="./images/nintendo.png" alt="">
+                  Nintendo</li>
+                <li class="list-group-item py-2 mobile-meu-category-itunes"> <img src="./images/itunes.png" alt="">
+                  Itunes </li>
+                <li class="list-group-item py-2 mobile-meu-category-other"> <img src="./images/other.png" alt=""> Other
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-uppercase hovered">
+        Sale
+      </div>
+
+      <div class="text-uppercase hovered">FAQ</div>
+
+      <div class="text-uppercase hovered">Support</div>
+
+      <div class="text-uppercase">
+        <li class="mt-3 lang">
+          <select class="form-select border-0 outline-none w-100" aria-label="Default select example">
+            <option value="1" class="w-100"><span>USA</span></option>
+            <option value="2" class="w-100"><span>RUS</span></option>
+            <option value="3" class="w-100"><span>FINLAND</span></option>
+          </select>
+          </button>
+        </li>
+      </div>
+    </div>
+  </div>
+  <section id="menu-category" class="position-fixed top-0 w-100 h-100">
+    <div id="menu-category-bg" class="position-absolute top-0 start-0 w-100 h-100 bg-transparent"></div>
+    <!-- Playstation Store start -->
+    <div class="container d-none playstation-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/playstation.png" alt="">
+            PlayStation Store
+          </span>
+        </div>
+
+        <div class="content-body">
+
+          <!-- Playstation store flags start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- Playstation store flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Playstation Store end -->
+
+    <!-- Xbox start -->
+    <div class="container d-none xbox-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/xbox.png" alt="">
+            XBOX
+          </span>
+        </div>
+
+        <div class="content-body">
+
+          <!-- Playstation store flags start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- Playstation store flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Xbox end -->
+
+    <!-- Steam start -->
+    <div class="container d-none steam-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/steam.png" alt="">
+            Steam
+          </span>
+        </div>
+
+        <div class="content-body">
+
+          <!-- Playstation store flags start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- Playstation store flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Steam end -->
+
+    <!-- Nintendo start -->
+    <div class="container d-none nintendo-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/nintendo.png" alt="">
+            Nintendo
+          </span>
+        </div>
+
+        <div class="content-body">
+          <!-- flag Start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Nintendo end -->
+
+    <!-- Itunes start -->
+    <div class="container d-none itunes-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/itunes.png" alt="">
+            Itunes
+          </span>
+        </div>
+
+        <div class="content-body">
+          <!-- flag Start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Itunes end -->
+
+    <!-- Other start -->
+    <div class="container d-none other-menu-category">
+      <div class="menu-cotegory-content">
+
+        <div class="content-header">
+          <div class="menu-category-close-btn">
+            <img src="./images/menu-category-close-btn.svg" alt="">
+          </div>
+          <span>
+            <img src="./images/other.png" alt="">
+            Other
+          </span>
+        </div>
+
+        <div class="content-body">
+          <!-- flag Start -->
+          <div class="row content-card">
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+            <div class="col-6 card-item d-flex">
+              <img src="./images/flags/usa.png" alt="">
+              <span class="text">
+                PSN <br>
+                <span class="text-uppercase">USA</span>
+              </span>
+            </div>
+          </div>
+          <!-- flags end -->
+        </div>
+
+      </div>
+    </div>
+    <!-- Other end -->
+
+  </section>
+  <!-- header -->
+
+  <!-- Shop modal start -->
+  <section id="shop-modal" class="position-absolute top-0 start-0 w-100 bg-info">
+    <div class="main">
+      <div class="position-relative">
+        <div class="shop-content position-absolute m-0">
+          <div class="content-title">Shopping cart</div>
+
+          <div class="cards">
+            <div class="row w-100 p-0 mx-auto">
+              <div class="col-4 p-0">
+                <div class="card-img position-relative">
+                  <div class="playstation-img d-flex align-items-center">
+                    <img src="./images/playstation-white.png" alt="" />
+                    <span>PlayStation Store</span>
+                  </div>
+                  <div class="playstation-title">
+                    5EUR <br />
+                    <span>PSN Gift card 20 EUR Finland</span>
+                  </div>
+
+                  <img src="./images/flags/finland.png" alt="" class="finland" />
+                </div>
+              </div>
+              <div class="col-8 p-0 m-0">
+                <div class="calculate">
+                  <div class="d-flex w-100 justify-content-between">
+                    <div class="title">
+                      <div class="name">PSN Gift Card 5 EUR</div>
+                      <div class="country">Finland</div>
+                    </div>
+                    <button class="delete">
+                      <img src="./images/delete.png" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="d-inline-flex w-100 align-items-center justify-content-between">
+                    <div class="price">
+                      <span class="money">4.99</span>€
+                      <span class="discount">5 €</span>
+                    </div>
+                    <div class="count">
+                      <button class="plus">
+                        <img src="./images/plus.png" alt="" />
+                      </button>
+                      <button class="minus">
+                        <img src="./images/minus.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="row w-100 p-0 mx-auto">
+              <div class="col-4 p-0">
+                <div class="card-img position-relative">
+                  <div class="playstation-img d-flex align-items-center">
+                    <img src="./images/playstation-white.png" alt="" />
+                    <span>PlayStation Store</span>
+                  </div>
+                  <div class="playstation-title">
+                    5EUR <br />
+                    <span>PSN Gift card 20 EUR Finland</span>
+                  </div>
+
+                  <img src="./images/flags/finland.png" alt="" class="finland" />
+                </div>
+              </div>
+              <div class="col-8 p-0 m-0">
+                <div class="calculate">
+                  <div class="d-flex w-100 justify-content-between">
+                    <div class="title">
+                      <div class="name">PSN Gift Card 5 EUR</div>
+                      <div class="country">Finland</div>
+                    </div>
+                    <button class="delete">
+                      <img src="./images/delete.png" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="d-inline-flex w-100 align-items-center justify-content-between">
+                    <div class="price">
+                      <span class="money">4.99</span>€
+                      <span class="discount">5 €</span>
+                    </div>
+                    <div class="count">
+                      <button class="plus">
+                        <img src="./images/plus.png" alt="" />
+                      </button>
+                      <button class="minus">
+                        <img src="./images/minus.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result w-100 d-flex justify-content-between">
+            <div class="total">Total</div>
+
+            <div class="euro">10.34€</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Shop modal end -->
+
+  <!-- Select payment method of start -->
+  <section class="payment_select">
+    <h2>Select payment method</h2>
+    <div class="transfer">
+      <div class="box">
+        <a href="#"><img src="./images/select-payment/bitpay.png" /></a>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./images/select-payment/nordea.svg" /></a>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./images/select-payment/pankki.svg" /></a>
+      </div>
+      <div class="box">
+        <a class="n26" href="#"><img src="./images/select-payment/n26.svg" /></a>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./images/select-payment/revolut.svg" /></a>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./images/select-payment/danske_bank.svg" /></a>
+      </div>
+    </div>
+
+    <div class="continue">
+      <a href="#">Continue</a>
+    </div>
+
+    <hr />
+    <h5>Change order country</h5>
+    <div class="custom-select display-inline-block">
+      <select id="">
+        <option value="">US</option>
+        <option value="">Country</option>
+        <option value="">UK</option>
+        <option value="">Czech</option>
+        <option value="">Ukraine</option>
+        <option value="">Poland</option>
+        <option value="">Norway</option>
+        <option value="">Spain</option>
+        <option value="">Italy</option>
+        <option value="">Germany</option>
+        <option value="">Russia</option>
+      </select>
+    </div>
+    <p>
+      If you don’t see some of payment method’s you can try to change your
+      country to enable some others.
+    </p>
+  </section>
+  <!-- Select payment method of end -->
+
+  <!-- Transfer start -->
+  <section class="transfers">
+    <div class="transfers_in">
+      <div>
+        <a href="#"><img src="./images/payment/bitpay.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/payop.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/estonian-banks.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/przelewy.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/ideal.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/blik.png" /></a>
+      </div>
+      <div>
+        <a href="#"><img src="./images/payment/trustly.png" /></a>
+      </div>
+    </div>
+  </section>
+  <!-- Transfer end -->
+
+  <!-- footer_top start -->
+  <section class="footer_top">
+    <div class="footer_top_wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="#" class="footer_top_item">
+            <img src="./images/super-fast.png" alt="super-fast.png" />
+            <div class="footer_top_item_title">
+              <h3>Super fast</h3>
+              <p>Instant digital download</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="#" class="footer_top_item">
+            <img src="./images/reliable-safe.png" alt="reliable-safe.png" />
+            <div class="footer_top_item_title">
+              <h3>Reliable & safe</h3>
+              <p>Over 10.000 games</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="#" class="footer_top_item">
+            <img src="./images/customer-support.png" alt="customer-support.png" />
+            <div class="footer_top_item_title">
+              <h3>Customer support</h3>
+              <p>Human support 24/7</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="#" class="footer_top_item">
+            <div class="footer_top_item_title">
+              <h3>
+                Trustpilot
+                <img src="./images/footer_start_group.svg" alt="footer_start_group.svg" />
+              </h3>
+              <p>HRated 4.7 out of 5, based on 539,719 reviews</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer_top end -->
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer_wrapper">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="footer_logo">
+            <a href="./index.html">
+              <img src="./images/logo-footer.png" alt="logo-footer.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul class="footer_link">
+            <li class="footer_item"><a href="#">Information</a></li>
+            <li class="footer_item"><a href="#">About Us</a></li>
+            <li class="footer_item"><a href="#">Privacy Policy</a></li>
+            <li class="footer_item"><a href="#">Terms & Conditions</a></li>
+            <li class="footer_item"><a href="#">Payments & Delivery</a></li>
+            <li class="footer_item"><a href="#">Purchase returns</a></li>
+            <li class="footer_item"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer_address">
+            <div class="footer_registration">
+              <h3>Registration</h3>
+              <p>
+                Reg. number: 14235362 Address: Tuukri tn 19-216 Kesklinna
+                linnaosa, Tallinn Harju maakond 10152, Estonia Email:
+                brolexys@gmail.com Phone: +380938711295
+              </p>
+            </div>
+            <div class="footer_company">
+              <h3>Partner company</h3>
+              <p>
+                Game Crew Ltd Address: Chernihiv, Pobedy ave 139 Phone:
+                +380938711295
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- Bootstrap 5.0.0 file -->
+  <script src="./libs/bootstrap-5.0.0.js"></script>
+  <!-- Jquery 3.6.1 file -->
+  <script src="./libs/jquery-3.6.1.js"></script>
+
+  <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+              create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+                  and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+          except the current select box:*/
+      var x,
+        y,
+        i,
+        xl,
+        yl,
+        arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i);
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+      then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+  </script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "headerFooter";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+header{
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.mobile_menu{
+    z-index: 2;
+}
+
+// home start
+#home {
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        margin: 52px 0 24px;
+    }
+
+    form {
+        margin-bottom: 24px;
+
+        .form-inputs {
+
+            .input-group,
+            .input-group-2 {
+                width: 300px;
+
+                .text {
+                    font-family: 'Gilroy', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+
+            input,
+            .custom-select {
+                width: 300px;
+                font-family: 'Gilroy', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                outline: none;
+                border: 1px solid #CCCCCC;
+                border-radius: 10px;
+                padding: 20px 26px;
+                margin-bottom: 10px;
+                color: black;
+            }
+
+            .input-group-2 {
+                padding-left: 10px;
+            }
+
+            .custom-select {
+                position: relative;
+                padding: 0;
+
+                select {
+                    display: none;
+                }
+
+                .select-selected {
+                    background-color: transparent;
+                    width: 100%;
+                    padding: 20px 26px !important;
+                    border-bottom: 0px !important;
+                    color: black !important;
+                }
+
+                /*style the arrow inside the select element:*/
+                .select-selected:after {
+                    position: absolute;
+                    content: "";
+                    top: 29px;
+                    right: 24px;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-color: #000 transparent transparent transparent;
+                }
+
+                /*point the arrow upwards when the select box is open (active):*/
+                .select-selected.select-arrow-active:after {
+                    border-color: transparent transparent #000 transparent;
+                    top: 22px;
+                }
+
+                /*style the items (options), including the selected item:*/
+                .select-items div,
+                .select-selected {
+                    color: #fff;
+                    padding: 8px 16px;
+                    border: 1px solid red;
+                    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                /*style items (options):*/
+                .select-items {
+                    position: absolute;
+                    background-color: #2AB199;
+                    color: white;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    z-index: 99;
+                }
+
+                /*hide the items when the select box is closed:*/
+                .select-hide {
+                    display: none;
+                }
+
+                .select-items div:hover,
+                .same-as-selected {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    color: white;
+                }
+            }
+        }
+
+        #sign-up-text {
+            margin: 47px 0 43px;
+
+            .checkbox {
+
+                input {
+                    appearance: none;
+                    width: 29px;
+                    height: 29px;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:after {
+                        content: " ";
+                        width: 15px;
+                        height: 15px;
+                        background-color: #2AB199;
+                        border-radius: 50%;
+                        display: none;
+                    }
+
+                    &:checked:after {
+                        display: block;
+                    }
+                }
+
+                label {
+                    cursor: pointer;
+                    font-family: 'Gilroy', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-left: 18px !important;
+                }
+            }
+        }
+
+        #send {
+            width: 263px;
+            padding: 15px 0 14px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            background: #2AB199;
+            border-radius: 50px;
+        }
+    }
+}
+
+
+
+// Start madal start
+#shop-modal {
+    .shop-content {
+        top: 0;
+    }
+}
+
+// Start madal end
+
+// home end
+
+// interested start
+#interested {
+    background: #f5f5f5;
+    padding: 30px 0 46px;
+
+    .head-title {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 29px;
+    }
+
+    .cards {
+
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .cards-inner {
+            width: 1360px;
+
+            .head-card {
+                color: white;
+                width: 250px;
+                height: 220px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+
+                .card-logo {
+                    position: absolute;
+                    left: 15px;
+                    top: 25px;
+                    height: 23px;
+                }
+
+                .name {
+                    position: absolute;
+                    top: 35px;
+                    left: 58px;
+                    font-family: 'Gilroy', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+
+                .flag {
+                    right: 15px;
+                    bottom: 25px;
+                    position: absolute;
+                    width: 25px;
+                    height: 18px;
+                }
+
+                .description {
+                    position: absolute;
+                    left: 15px;
+                    bottom: 25px;
+                    font-family: 'Gilroy', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+
+                .title {
+                    position: absolute;
+                    left: 15px;
+                    bottom: 45px;
+                    font-family: 'Gilroy', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 28px;
+                }
+            }
+
+            .body-card {
+                .price {
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #2F424E;
+                    margin: 19px 0 14px;
+                }
+
+                .buy {
+                    width: 132px;
+                    padding: 10px 0 9px;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    background: #2AB199;
+                    border-radius: 50px;
+
+                    img {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px){
+    #shop-modal{
+        position: none;
+        
+        .main{
+            width: 100%;
+            padding: 0;
+        }
+        
+        .shop-content{
+            transform: translateY(-6%);
+            width: 100%;
+            left: 0;
+            padding: 0 40px 24px;
+        }
+    }
+
+    #home{
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 670px) {
+    #home {
+        form {
+            .form-inputs {
+                display: block !important;
+
+                .input-group-2 {
+                    padding-left: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    #home,
+    #interested {
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 25px;
+
+        }
+    }
+
+    #home {
+        h3 {
+            font-size: 26px;
+            line-height: 30px;
+            margin: 23px 0 24px;
+        }
+
+        form {
+            margin-bottom: 23px;
+
+            .input-group,
+            .input-group-2 {
+                width: 100% !important;
+
+                input {
+                    width: 100% !important;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .custom-select {
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .text {
+                    font-size: 12px;
+                    line-height: 14px;
+                    max-width: 285px;
+                }
+            }
+
+            .input-group-2 {
+                .text {
+                    width: 100%;
+                }
+            }
+
+            #sign-up-text {
+                margin: 43px 0 34px;
+            }
+
+            #send {
+                width: 100%;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+        }
+
+
+    }
+
+    #interested {
+        padding: 20px 0 0;
+
+        .head-title {
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 18px;
+        }
+
+        .cards {
+            .cards-inner {
+                width: 820px;
+
+                .interested-card {
+                    .head-card {
+                        width: 160px;
+                        height: 160px;
+
+                        .card-logo {
+                            top: 17px;
+                            left: 13px;
+                            height: 17px;
+                        }
+
+                        .name {
+                            display: none;
+                        }
+
+                        .title {
+                            left: 15px;
+                            bottom: 45px;
+                            font-size: 24px;
+                            line-height: 28px;
+                            bottom: 39px;
+                            left: 7px;
+                            right: 7px;
+                        }
+
+                        .flag {
+                            right: 15px;
+                            bottom: 12px;
+                            width: 27px;
+                            height: 18px;
+                            object-fit: cover;
+                        }
+
+                        .description {
+                            left: 7px;
+                            bottom: 12px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 10px;
+                            line-height: 12px;
+                            width: 85px;
+                        }
+                    }
+
+                    .body-card {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 11px 0 22px;
+                        padding: 0 10px;
+
+                        .price {
+                            font-family: 'Roboto', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #000000;
+                            margin: 0;
+                        }
+
+                        .buy {
+                            width: 50px;
+                            padding: 8px 0 11px;
+
+                            span {
+                                display: none;
+                            }
+
+                            img {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // #shop-modal {
+    //     .main {
+    //         width: 100%;
+    //         padding: 0;
+    //         left: 0;
+
+    //         .shop-content {
+    //             left: 0;
+    //             right: 0;
+    //             width: 100%;
+
+    //             .content-title {
+    //                 margin-top: 108px;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+
